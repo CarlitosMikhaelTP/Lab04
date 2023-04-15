@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link src="diseño.css">
+    <script>
+        function validarEdad() {
+          var edad = document.getElementById("edad").value; 
+          if (edad < 18) { 
+            alert("Solo se admiten usuarios mayores de edad");
+            return false; 
+          }
+        }
+      </script>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="pregunta2.php" method="post" class="card px-5 py-3" onsubmit="return validarEdad();">
+            <div align="center"><h2>Datos de Usuario</h2></div>
+        <form class="row">
+
+            <div class="col-12 py-2">
+                <label for="nombreApellidoInput" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="nombreApellidoInput" placeholder="Nombre del Usuario" required>
+            </div>
+            <div class="col-12 py-2">
+                <label for="direccioninput" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="direccioninput" placeholder="Dirección del Usuario" required>
+            </div>
+            <div class="col-12 py-2">
+                <label for="emailinput" class="form-label" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="emailinput" placeholder="Correo electrónico" required>
+            </div>
+            <div class="col-12 py-2">
+                <label for="edadinput" class="form-label">Edad</label>
+                <input type="number"class="form-control" name="edad" id="edad" placeholder="18" required>
+            </div>
+            <div class="col-6 py-2">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Limpiar</button>
+            </div>
+        
+                
+                
+            
+
+
+        </form>
+        </form>
+    </div>
+
+
+    <form>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
